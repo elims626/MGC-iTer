@@ -13,6 +13,7 @@ export default {
 <style lang="less">
 @import './assets/css/img/icon_style.less';
 @import './assets/css/img/img_style.less';
+@import './assets/css/public/button_style.less';
 @import './assets/css/public/font_style.less';
 @import './assets/css/public/input_style.less';
 @import './assets/css/public/public_style.less';
