@@ -1,7 +1,7 @@
 <template>
   <div class="public_box">
     <div class="img_header_box float_left">
-      <img v-if="!this.userInfo.img" class="img_header img_border " src="../../assets/logo.png" alt="">
+      <img v-if="!this.userInfo.img" class="img_header img_border " src="../../assets/header.jpg" alt="">
       <img v-if="this.userInfo.img" class="img_header img_border " :src="this.userInfo.img" alt="">
     </div>
     <div class="user_userinfo float_right">
