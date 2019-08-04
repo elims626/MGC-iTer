@@ -4,25 +4,25 @@
 
     <div class="public_white_box border_radius">
       <div class="align_center user_operate_list">
-        <img class="icon_middle_small margin_top" src="../../assets/icon/home/yi.png" alt="">
+        <img class="icon_middle_small margin_top" src="../../assets/icon/home/集团.png" alt="">
         <div class="font_black_middle margin_buttom">
           集团
         </div>
       </div>
       <div class="align_center user_operate_list" >
-        <img class="icon_middle_small margin_top" src="../../assets/icon/home/shi.png" alt="">
+        <img class="icon_middle_small margin_top" src="../../assets/icon/home/部门.png" alt="">
         <div class="font_black_middle margin_buttom">
           部门
         </div>
       </div>
       <div class="align_center user_operate_list">
-        <img class="icon_middle_small margin_top" src="../../assets/icon/home/zhu.png" alt="">
+        <img class="icon_middle_small margin_top" src="../../assets/icon/home/娱乐.png" alt="">
         <div class="font_black_middle margin_buttom">
-          公寓
+          娱乐
         </div>
       </div>
       <div class="align_center user_operate_list" >
-        <img class="icon_middle_small margin_top" src="../../assets/icon/home/xing.png" alt="">
+        <img class="icon_middle_small margin_top" src="../../assets/icon/home/周边.png" alt="">
         <div class="font_black_middle margin_buttom">
           周边
         </div>
@@ -58,20 +58,21 @@
     <router-link v-for="item in lists" :key="item.id" :to="{
       name: 'articleDetail',
       params: {
-        id: item.aid
+        id: item.id
       }
     }">
       <imgTextPanel >
-        <img slot="picture" src="../../assets/photo/a.jpg" alt="">
-<!--        <img slot="picture" v-if="item.article_img" :src="item.article_img" alt="">-->
-        <span slot="time">2019-07-17</span>
-        <span slot="title">应届生的职场养成</span>
-        <span slot="zan">12</span>
-        <span slot="comment">33</span>
-        <span slot="collect">78</span>
+        <img slot="picture" :src="item.img" alt="">
+        <img slot="picture" v-if="!item.img"  src="../../assets/photo/a.jpg" alt="">
+        <span slot="time">{{item.time}}</span>
+        <span slot="title">{{item.title}}</span>
+        <span slot="zan">{{item.zan}}</span>
+        <span slot="comment">{{item.comment}}</span>
+        <span slot="collect">{{item.collect}}</span>
       </imgTextPanel>
     </router-link>
     <div style="height: 3.2rem;"></div>
+    <img @click="goHr"  class="hr icon_middle_middle" src="../../assets/icon/hr.png">
     <headerNav :home_selected = 1 />
   </div>
 </template>
@@ -88,27 +89,87 @@ export default {
     },
   data () {
     return {
-      lists: [1,2,3,4,5],
+      lists: [
+        {
+          img: 'https://b2.bmp.ovh/imgs/2019/08/80ad7c9f9854ae71.jpg',
+          id: 1,
+          title: '如何实现校园到职场的转变',
+          time: '2019-07-17',
+          zan: 127,
+          comment: 56,
+          collect: 37
+        },
+        {
+          img: 'https://b2.bmp.ovh/imgs/2019/08/39dbfd17234661ce.jpg',
+          id: 2,
+          title: '美的对新员工培养计划',
+          time: '2019-07-16',
+          zan: 222,
+          comment: 67,
+          collect: 47
+        },
+        {
+          img: 'https://b2.bmp.ovh/imgs/2019/08/268104bcdaf7b33f.jpg',
+          id: 3,
+          title: '走进美的，了解美的',
+          time: '2019-07-15',
+          zan: 782,
+          comment: 372,
+          collect: 138
+        },
+        {
+          img: 'https://b2.bmp.ovh/imgs/2019/08/45b1ddc30b575e17.jpg',
+          id: 4,
+          title: '美的历史馆介绍',
+          time: '2019-07-14',
+          zan: 786,
+          comment: 561,
+          collect: 337
+        },
+        {
+          img: 'https://b2.bmp.ovh/imgs/2019/08/30e3ddf30c29f937.jpg',
+          id: 5,
+          title: '关于美的对应届生的期望',
+          time: '2019-07-13',
+          zan: 1127,
+          comment: 422,
+          collect: 176
+        },
+        {
+          img: 'https://b2.bmp.ovh/imgs/2019/08/c9adb3587a287da2.jpg',
+          id: 6,
+          title: '别人眼中的美的',
+          time: '2019-07-12',
+          zan: 645,
+          comment: 433,
+          collect: 123
+        }
+      ],
       img: [
         {
           id: 5,
-          src: 'https://i.loli.net/2019/05/21/5ce3738e87d9122161.jpg',
+          src: 'https://i.loli.net/2019/08/03/TlwcqLV6vIRZmOk.png',
         },
         {
           id: 4,
-          src: 'https://i.loli.net/2019/05/21/5ce3738e87d9122161.jpg',
+          src: 'https://i.loli.net/2019/08/03/MQ9aDxLIbJ3AmEw.png',
         },
         {
           id: 3,
-          src: 'https://i.loli.net/2019/05/21/5ce3732940a0954171.jpg',
+          src: 'https://i.loli.net/2019/08/03/eLt24kirO5CXbc1.jpg',
         },
         {
           id: 2,
-          src: 'https://i.loli.net/2019/05/21/5ce3738ebb28358843.jpg',
+          src: 'https://i.loli.net/2019/08/03/ebijsQNpvlw7CMU.jpg',
         },
       ],
         width: 460,
         height: 250
+    }
+  },
+  methods: {
+    goHr(){
+      this.$router.push({path: '/hr'})
     }
   }
 }
