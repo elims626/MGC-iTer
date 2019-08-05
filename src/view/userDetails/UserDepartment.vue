@@ -14,7 +14,7 @@
       </div>
     </div>
     <div style="position: fixed; width: 100%; bottom: 0;">
-      <button class="add_btn btn">
+      <button class="add_btn btn" @click="goChat">
         开  始  群  聊
       </button>
     </div>
@@ -22,49 +22,40 @@
 </template>
 <script>
   import backHeader from '../../components/nav/backHeader';
+  import axios from '@/libs/api.request'
   export default {
     components: {
       backHeader
     },
     data () {
       return {
-        lists: [
-          {
-            id: 1,
-            img: '',
-            username: '张三',
-            position: '前端开发工程师',
-            department: '信息安全模块'
-          },
-          {
-            id: 2,
-            img: '',
-            username: '李四',
-            position: 'java开发工程师',
-            department: '网络管理模块'
-
-          },
-          {
-            id: 3,
-            img: '',
-            username: '王五',
-            position: '应用工程师',
-            department: '基础应用模块'
-          },
-        ],
+        lists: [],
         title: '基础架构与信息安全',
       }
     },
+    created() {
+      this.getUserLists()
+    },
     methods: {
-      // goDetail(id) {
-      //   this.$route.push({
-      //     name: 'userDetail',
-      //     params:{
-      //       id: id,
-      //     }
-      //   });
-      //   console.log(id);
-      // }
+      getUserLists() {
+        axios.request({
+          url: "/static/user.json",
+        }).then( res =>{
+          this.lists = res.data.grouplists;
+        })
+      },
+      goChat() {
+        this.$router.push({ path: '/chat'});
+      },
+      goDetail(id) {
+        this.$router.push({
+          name: 'userDetail',
+          params:{
+            id: id,
+          }
+        });
+        // this.$router.push({ path: '/userDetail'});
+      }
     }
   };
 </script>

@@ -16,7 +16,7 @@
     <div class="public_white_box border_radius">
       <div class="border_button margin_top" @click="goUserAlumnus">
         <div class="user_icon_text">
-          <img src="../../assets/icon/user/notification.png" class="icon_middle_small icon_margin" alt="">
+          <img src="https://s2.ax1x.com/2019/08/04/ecehKP.png" class="icon_middle_small icon_margin" alt="">
           <span class="font_black_middle user_type_text float_right margin_top">我的校友</span>
         </div>
         <div class="float_right user_icon_more">
@@ -25,7 +25,7 @@
       </div>
       <div class="border_button" @click="goUserGroup">
         <div class="user_icon_text">
-          <img src="../../assets/icon/user/notification.png" class="icon_middle_small icon_margin" alt="">
+          <img src="https://s2.ax1x.com/2019/08/04/ece4Df.png" class="icon_middle_small icon_margin" alt="">
           <span class="font_black_middle user_type_text float_right margin_top">我的小组</span>
         </div>
         <div class="float_right user_icon_more">
@@ -34,7 +34,7 @@
       </div>
       <div class="border_button" @click="goUserDepartment">
         <div class="user_icon_text">
-          <img src="../../assets/icon/user/feedback.png" class="icon_middle_small icon_margin" alt="">
+          <img src="https://s2.ax1x.com/2019/08/04/ece5b8.png" class="icon_middle_small icon_margin" alt="">
           <span class="font_black_middle user_type_text float_right margin_top">部门应届</span>
         </div>
         <div class="float_right user_icon_more">
@@ -43,7 +43,7 @@
       </div>
       <div class="border_button" @click="goUserLabel">
         <div class="user_icon_text">
-          <img src="../../assets/icon/user/email.png" class="icon_middle_small icon_margin" alt="">
+          <img src="https://s2.ax1x.com/2019/08/04/eceoVS.png" class="icon_middle_small icon_margin" alt="">
           <span class="font_black_middle user_type_text float_right margin_top">我的标签</span>
         </div>
         <div class="float_right user_icon_more">
@@ -53,7 +53,7 @@
           <mt-badge size="large" type="primary"> 游 泳 </mt-badge>
           <mt-badge size="large" type="error"> 烹 饪 </mt-badge>
           <mt-badge size="large" type="success"> 健 身 </mt-badge>
-          <mt-badge size="large" type="warning"> 电 竞 </mt-badge>
+<!--          <mt-badge size="large" type="warning"> 电 竞 </mt-badge>-->
         </div>
         <div style="height: 0.5rem;"></div>
       </div>
@@ -72,8 +72,8 @@
     data () {
       return {
         userInfo: '',
-        username: '王蓓',
-        userId: 'wangbei8'
+        username: '张三',
+        userId: 'zhangsan'
       }
     },
     methods: {

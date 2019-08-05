@@ -148,19 +148,19 @@ export default {
       img: [
         {
           id: 5,
-          src: 'https://i.loli.net/2019/08/03/TlwcqLV6vIRZmOk.png',
+          src: 'https://b2.bmp.ovh/imgs/2019/08/536ae57c865c5cd6.png',
         },
         {
           id: 4,
-          src: 'https://i.loli.net/2019/08/03/MQ9aDxLIbJ3AmEw.png',
+          src: 'https://b2.bmp.ovh/imgs/2019/08/00c0074856d44b1c.png',
         },
         {
           id: 3,
-          src: 'https://i.loli.net/2019/08/03/eLt24kirO5CXbc1.jpg',
+          src: 'https://b2.bmp.ovh/imgs/2019/08/f1bab7fd00cd5bc9.jpg',
         },
         {
           id: 2,
-          src: 'https://i.loli.net/2019/08/03/ebijsQNpvlw7CMU.jpg',
+          src: 'https://b2.bmp.ovh/imgs/2019/08/5a12143f11eca6a5.jpg',
         },
       ],
         width: 460,

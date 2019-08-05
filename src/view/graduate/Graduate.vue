@@ -25,11 +25,14 @@
         <div class="explore_box margin_top">
           <span class="float_left">导师计划</span>
           <div class="margin_little">
-<!--            <img style="height: 100%;width: 100%;" src="../../assets/img/plan2.png">-->
+            <img style="height: 100%;width: 100%;" src="../../assets/img/plan2.png">
+            <img style="height: 100%;width: 100%;" src="../../assets/img/plan3.png">
           </div>
         </div>
+        <div style="height: 2.8rem"></div>
       </mt-tab-container-item>
     </mt-tab-container>
+    <div style="height: 1.2rem"></div>
   </div>
 </template>
 

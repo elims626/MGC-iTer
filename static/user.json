@@ -1,0 +1,86 @@
+{
+  "alumnuslists": [
+    {
+      "id": 1,
+      "img": "",
+      "username": "张三",
+      "position": "前端开发工程师"
+    },
+    {
+      "id": 2,
+      "img": "",
+      "username": "王翠花",
+      "position": "java开发工程师"
+    },
+    {
+      "id": 3,
+      "img": "",
+      "username": "刘丽",
+      "position": "应用工程师"
+    },
+    {
+      "id": 4,
+      "img": "",
+      "username": "张章",
+      "position": "java开发工程师"
+    }
+  ],
+  "grouplists": [
+    {
+      "id": 1,
+      "img": "",
+      "username": "张三",
+      "position": "前端开发工程师",
+      "department": "信息安全模块"
+    },
+    {
+      "id": 2,
+      "img": "",
+      "username": "张笑",
+      "position": "java开发工程师",
+     "department": "网络管理模"
+    },
+    {
+      "id": 3,
+      "img": "",
+      "username": "雷雷",
+      "position": "应用工程师",
+      "department": "基础应用模块"
+    }
+  ],
+ "userdetail":[
+   {
+     "id": 1562345,
+     "name": "张三",
+     "img": "",
+     "sex": "nan",
+     "position": "前端开发工程师",
+     "department": "先行技术",
+     "school": "清华大学",
+     "phone": "15628392839",
+     "email": "zs@midea.com"
+   },
+   {
+     "id": 1562345,
+     "name": "张三",
+     "img": "",
+     "sex": "nan",
+     "position": "前端开发工程师",
+     "department": "先行技术",
+     "school": "清华大学",
+     "phone": "15628392839",
+     "email": "zs@midea.com"
+   },
+   {
+     "id": 1562345,
+     "name": "张三",
+     "img": "",
+     "sex": "nan",
+     "position": "前端开发工程师",
+     "department": "先行技术",
+     "school": "清华大学",
+     "phone": "15628392839",
+     "email": "zs@midea.com"
+   }
+ ]
+}

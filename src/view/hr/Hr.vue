@@ -1,5 +1,5 @@
 <template>
-  <div class="public_content">
+  <div class="public_content_box">
     <backHeader :title="title"></backHeader>
 <!--    <div style="height: 2.4rem;" class="margin_little">-->
 <!--      <mt-search-->
@@ -99,21 +99,31 @@ export default {
 };
 </script>
 <style lang="less">
+  .public_content_box{
+    background: #f0f0f0;
+    min-height: 37.6rem;
+  }
 .hr_box{
-  width: 100%;
-  min-height: 3.8rem;
-  background: #c2ebd6;
-  border-radius: 1rem;
+  width: 96%;
+  margin-left: 2%;
+  min-height: 4.0rem;
+  background: #b3cdf3;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 16px #b2c2f0;
 }
   .hr_input{
+    box-shadow: 0 0 10px #f0f0f0;
     position: absolute;
-    bottom: 0.6rem;
+    bottom: 0.2rem;
     height: 2.4rem;
     width: 100%;
     .hr_input_content{
       height: 2.4rem;
       width: 78%;
       outline: none;
+      border-right-style: none;
+      border-left-style: none;
+      border-top-style: none;
     }
     .btn_hr{
       height: 2.4rem;

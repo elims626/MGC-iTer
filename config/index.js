@@ -13,7 +13,7 @@ module.exports = {
     proxyTable: {
       //解决跨域问题
       '/api': {
-        target:'http://192.168.0.104:8763/',//其他服务器的IP地址
+        target:'http://10.73.41.70:8099/',//其他服务器的IP地址
         changeOrigin:true,
         pathRewrite:{
             '^/api': ''

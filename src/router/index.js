@@ -10,6 +10,8 @@ import UserDepartment from '../view/userDetails/UserDepartment.vue'
 import UserGroup from '../view/userDetails/UserGroup.vue'
 import UserLabel from '../view/userDetails/UserLabel.vue'
 import ArticleDetail from '../view/detail/ArticleDetail.vue'
+import Chat from '../view/chat/Chat.vue'
+import UserDetail from '../view/detail/UserDetail.vue'
 import Hr from '../view/hr/Hr.vue'
 import Forum from '../view/forum/Forum.vue'
 import Graduate from '../view/graduate/Graduate.vue'
@@ -75,6 +77,16 @@ export default new Router({
       path: '/articleDetail',
       name: 'articleDetail',
       component: ArticleDetail
+    },
+    {
+      path: '/userDetail/:id',
+      name: 'userDetail',
+      component: UserDetail
+    },
+    {
+      path: '/chat',
+      name: 'chat',
+      component: Chat
     }
   ]
 })
